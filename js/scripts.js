@@ -48,7 +48,7 @@ $(document).ready(function(){
 
     if(option7.selected === true){
       $(".question4").hide()
-      $(".answer1").show()
+      $(".question3").show()
     }
     if(option8.selected === true){
       $(".question4").hide()
@@ -66,7 +66,7 @@ $(document).ready(function(){
     }
     if(option10.selected === true){
       $(".question5").hide()
-      $(".question6").show()
+      $(".question2").show()
     }
     event.preventDefault();
   });
@@ -76,7 +76,7 @@ $(document).ready(function(){
 
     if(option11.selected === true){
       $(".question6").hide()
-      $(".question4").show()
+      $(".answer3").show()
     }
     if(option12.selected === true){
       $(".question6").hide()
