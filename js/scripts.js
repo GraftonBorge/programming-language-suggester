@@ -1,5 +1,23 @@
 $(document).ready(function(){
-  
+
+  $("#formOne").submit(function(event) {
+    const nameInput = $("input#name").val();
+    const ageInput = $("input#age").val();
+
+    $("#name").append(nameInput);
+    $("#age").append(ageInput);
+
+    event.preventDefault();
+  });
+  $("#form").submit(function(event){
+    const button = $("#button")[0];
+    
+    if(button){
+      $(".form").hide()
+      $(".question1").show()
+    }
+    event.preventDefault();
+  });
   $("#question1").submit(function(event){
     const option1 = $("#option1")[0];
     const option2 = $("#option2")[0];
@@ -14,9 +32,9 @@ $(document).ready(function(){
     }
     event.preventDefault();
   });
-    $("#question2").submit(function(event){
-      const option3 = $("#option3")[0];
-      const option4 = $("#option4")[0];
+  $("#question2").submit(function(event){
+    const option3 = $("#option3")[0];
+    const option4 = $("#option4")[0];
 
     if(option3.selected === true){
       $(".question2").hide()
@@ -28,9 +46,9 @@ $(document).ready(function(){
     }
     event.preventDefault();
   });
-    $("#question3").submit(function(event){
-      const option5 = $("#option5")[0];
-      const option6 = $("#option6")[0];
+  $("#question3").submit(function(event){
+    const option5 = $("#option5")[0];
+    const option6 = $("#option6")[0];
 
     if(option5.selected === true){
       $(".question3").hide()
@@ -42,9 +60,9 @@ $(document).ready(function(){
     }
     event.preventDefault();
   });
-    $("#question4").submit(function(event){
-      const option7 = $("#option7")[0];
-      const option8 = $("#option8")[0];
+  $("#question4").submit(function(event){
+    const option7 = $("#option7")[0];
+    const option8 = $("#option8")[0];
 
     if(option7.selected === true){
       $(".question4").hide()
@@ -56,9 +74,9 @@ $(document).ready(function(){
     }
     event.preventDefault();
   });
-    $("#question5").submit(function(event){
-      const option9 = $("#option9")[0];
-      const option10 = $("#option10")[0];
+  $("#question5").submit(function(event){
+    const option9 = $("#option9")[0];
+    const option10 = $("#option10")[0];
 
     if(option9.selected === true){
       $(".question5").hide()
@@ -70,9 +88,9 @@ $(document).ready(function(){
     }
     event.preventDefault();
   });
-    $("#question6").submit(function(event){
-      const option11 = $("#option11")[0];
-      const option12 = $("#option12")[0];
+  $("#question6").submit(function(event){
+    const option11 = $("#option11")[0];
+    const option12 = $("#option12")[0];
 
     if(option11.selected === true){
       $(".question6").hide()
