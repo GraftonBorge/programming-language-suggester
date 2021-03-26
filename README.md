@@ -20,7 +20,7 @@ _This is my week two solo project.I need to Create an application for people int
 * _clone from repository_
 * _open with GUI_
 
-_link to Github repository(https://github.com/GraftonBorge/programming-language-suggester.git)_
+_link to Github repository(https://github.com/GraftonBorge/programming-language-suggester.gitgit)_
 _link to 
 
 ## Known Bugs

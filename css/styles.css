@@ -1,3 +1,12 @@
  .question2, .question3, .question4, .question5, .question6{
   display: none
 }
+.card-body{
+  text-align: center;
+}
+p{
+  font-family: 'Franklin Gothic Medium';
+  font-size: 40px;
+  color: whitesmoke;
+  padding: 100px;
+}
