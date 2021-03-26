@@ -1,10 +1,8 @@
 $(document).ready(function(){
   
-  $("#questions").submit(function(event){
+  $("#question1").submit(function(event){
     const option1 = $("#option1")[0];
     const option2 = $("#option2")[0];
-    const option3 = $("#option3")[0];
-    const option4 = $("#option4")[0];
 
     if(option1.selected === true){
       $(".question1").hide()
@@ -14,7 +12,12 @@ $(document).ready(function(){
       $(".question1").hide()
       $(".question2").show()
     }
-    
+    event.preventDefault();
+  });
+    $("#question2").submit(function(event){
+      const option3 = $("#option3")[0];
+      const option4 = $("#option4")[0];
+
     if(option3.selected === true){
       $(".question2").hide()
       $(".question3").show()
@@ -25,4 +28,89 @@ $(document).ready(function(){
     }
     event.preventDefault();
   });
-});
+    $("#question3").submit(function(event){
+      const option5 = $("#option5")[0];
+      const option6 = $("#option6")[0];
+
+    if(option5.selected === true){
+      $(".question3").hide()
+      $(".question4").show()
+    }
+    if(option6.selected === true){
+      $(".question3").hide()
+      $(".question4").show()
+    }
+    event.preventDefault();
+  });
+    $("#question4").submit(function(event){
+      const option7 = $("#option7")[0];
+      const option8 = $("#option8")[0];
+
+    if(option7.selected === true){
+      $(".question4").hide()
+      $(".question5").show()
+    }
+    if(option8.selected === true){
+      $(".question4").hide()
+      $(".question5").show()
+    }
+    event.preventDefault();
+  });
+    $("#question5").submit(function(event){
+      const option9 = $("#option9")[0];
+      const option10 = $("#option10")[0];
+
+    if(option9.selected === true){
+      $(".question5").hide()
+      $(".question6").show()
+    }
+    if(option10.selected === true){
+      $(".question5").hide()
+      $(".question6").show()
+    }
+    event.preventDefault();
+  });
+    $("#question6").submit(function(event){
+      const option11 = $("#option11")[0];
+      const option12 = $("#option12")[0];
+
+    if(option11.selected === true){
+      $(".question6").hide()
+      $(".question1").show()
+    }
+    if(option12.selected === true){
+      $(".question6").hide()
+      $(".question1").show()
+    }
+    event.preventDefault();
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
