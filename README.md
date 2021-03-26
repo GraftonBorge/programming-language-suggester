@@ -25,7 +25,7 @@ _link to
 
 ## Known Bugs
 
-* _ _
+* _overlay image won't stretch to bottom of page _
 * _ _
 
 ## License
