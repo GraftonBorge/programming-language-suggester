@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     if(option1.selected === true){
       $(".question1").hide()
-      $(".question2").show()
+      $(".question4").show()
     }
     if(option2.selected === true){
       $(".question1").hide()
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     if(option3.selected === true){
       $(".question2").hide()
-      $(".question3").show()
+      $(".question5").show()
     }
     if(option4.selected === true){
       $(".question2").hide()
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     if(option5.selected === true){
       $(".question3").hide()
-      $(".question4").show()
+      $(".question2").show()
     }
     if(option6.selected === true){
       $(".question3").hide()
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
     if(option7.selected === true){
       $(".question4").hide()
-      $(".question5").show()
+      $(".answer1").show()
     }
     if(option8.selected === true){
       $(".question4").hide()
@@ -76,14 +76,15 @@ $(document).ready(function(){
 
     if(option11.selected === true){
       $(".question6").hide()
-      $(".question1").show()
+      $(".question4").show()
     }
     if(option12.selected === true){
       $(".question6").hide()
-      $(".question1").show()
+      $(".answer2").show()
     }
     event.preventDefault();
   });
+  
 
 
 
