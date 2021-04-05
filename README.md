@@ -27,6 +27,7 @@ _link to
 
 * _overlay image won't stretch to bottom of page_
 * _name and age input not working_
+* _question1 wont hide and show question2_
 
 ## License
 
