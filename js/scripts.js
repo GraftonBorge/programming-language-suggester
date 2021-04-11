@@ -1,5 +1,10 @@
 
+    
+    let pythonArray = [];
+    let javaArray = [];
+    let cSharpArray = [];
 
+$(document).ready(function(){
     const option1 = $("#option1")[0];
     const option2 = $("#option2")[0];
     const option3 = $("#option3")[0];
@@ -12,13 +17,8 @@
     const option10 = $("#option10")[0];
     const option11 = $("#option11")[0];
     const option12 = $("#option12")[0];
-    let pythonArray = [];
-    let javaArray = [];
-    let cSharpArray = [];
 
-$(document).ready(function(){
-
-   $(".form").submit(function(event){
+  $(".form").submit(function(event){
     const button1 = $("#button1")[0];
     
     if(button1){
@@ -33,7 +33,7 @@ $(document).ready(function(){
       $(".question1").hide()
       $(".question2").show()
     }
-    else if(option2.selected === true){
+    if(option2.selected === true){
       javaArray.push("j");
       $(".question1").hide()
       $(".question2").show()
@@ -95,14 +95,42 @@ $(document).ready(function(){
   $("#question6").submit(function(event){
     if(option11.selected === true){
       pythonArray.push("p");
-      $(".question6").hide()
-      $("").show()
     }
     if(option12.selected === true){
       cSharpArray.push("c");
+    }
+
+    if(pythonArray.length > javaArray.length){
       $(".question6").hide()
-      $("").show()
+      $(".answer1").show()
+    }
+    if(pythonArray.length > cSharpArray.length){
+      $(".question6").hide()
+      $(".answer1").show()
+    }
+    if(cSharpArray.length > pythonArray.length){
+      $(".question6").hide()
+      $(".answer2").show()
+    }
+    if(cSharpArray.length > javaArray.length){
+      $(".question6").hide()
+      $(".answer2").show()
+    }
+    if(javaArray.length > pythonArray.length){
+      $(".question6").hide()
+      $(".answer3").show()
+    }
+    if(javaArray.length > cSharpArray.length){
+      $(".question6").hide()
+      $(".answer3").show()
     }
     event.preventDefault();
   });
+
+
+
 });
+
+
+
+//search how to get length of array/string?
