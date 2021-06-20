@@ -1,26 +1,21 @@
-
-    
-    let pythonArray = [];
-    let javaArray = [];
-    let cSharpArray = [];
-
+  let pythonArray = [];
+  let javaArray = [];
+  let cSharpArray = [];
 $(document).ready(function(){
-    const option1 = $("#option1")[0];
-    const option2 = $("#option2")[0];
-    const option3 = $("#option3")[0];
-    const option4 = $("#option4")[0];
-    const option5 = $("#option5")[0];
-    const option6 = $("#option6")[0];
-    const option7 = $("#option7")[0];
-    const option8 = $("#option8")[0];
-    const option9 = $("#option9")[0];
-    const option10 = $("#option10")[0];
-    const option11 = $("#option11")[0];
-    const option12 = $("#option12")[0];
-
+  const option1 = $("#option1")[0];
+  const option2 = $("#option2")[0];
+  const option3 = $("#option3")[0];
+  const option4 = $("#option4")[0];
+  const option5 = $("#option5")[0];
+  const option6 = $("#option6")[0];
+  const option7 = $("#option7")[0];
+  const option8 = $("#option8")[0];
+  const option9 = $("#option9")[0];
+  const option10 = $("#option10")[0];
+  const option11 = $("#option11")[0];
+  const option12 = $("#option12")[0];
   $(".form").submit(function(event){
     const button1 = $("#button1")[0];
-    
     if(button1){
       $(".form").hide()
       $(".question1").show()
@@ -99,7 +94,6 @@ $(document).ready(function(){
     if(option12.selected === true){
       cSharpArray.push("c");
     }
-
     if(pythonArray.length > javaArray.length){
       $(".question6").hide()
       $(".answer1").show()
@@ -126,11 +120,4 @@ $(document).ready(function(){
     }
     event.preventDefault();
   });
-
-
-
 });
-
-
-
-//search how to get length of array/string?
